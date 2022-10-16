@@ -4,10 +4,11 @@ Artist.delete_all
 
 hotline_bling = Song.create(name: 'Hotline Bling')
 thriller = Song.create(name: 'Thriller')
+corvette = Song.create(name: 'Corvette')
 
 drake = Artist.create(name: 'Drake')
 mj = Artist.create(name: 'Michael Jackson')
-
+prince = Artist.create(name:'Prince')
 rap = Genre.create(name: 'Rap')
 pop = Genre.create(name: 'Pop')
 
@@ -19,3 +20,5 @@ mj.songs << thriller
 
 pop.songs << thriller
 rap.songs << hotline_bling
+
+prince.songs << corvette
